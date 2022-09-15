@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'sunscreen-linear-regression'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=sunscreen-linear-regression"
+                ],
+                "filter": {
+                    "name": "sunscreen-linear-regression",
+                    "kind": "lib"
+                }
+            },
+            "args": ["test_fhe_mean"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
